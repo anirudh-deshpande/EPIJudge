@@ -2,7 +2,14 @@ from test_framework import generic_test
 
 
 def search_list(L, key):
-    # TODO - you fill in here.
+
+    cur = L
+
+    while cur != None:
+        if cur.data == key:
+            return cur
+        cur = cur.next
+
     return None
 
 
